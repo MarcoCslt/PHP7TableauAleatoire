@@ -11,6 +11,13 @@
                 $k++;
             }
         }
-        echo "La valeur ".$i." est présente ".$k." fois <br>";
+        echo "<span";
+        if ($k > 2) {
+        ?>
+            style = "background-color : red; border : solid 1px black;"
+        <?php
+        }
+        echo "> La valeur " . $i . " est présente " . $k . " fois. </span>";
+        echo "<br>";
     }
 ?>
